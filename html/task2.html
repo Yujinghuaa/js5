@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="../css/task1.css">
+    <link rel="stylesheet" type="text/css" href="../css/task2.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>主页面</title>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../jquery-3.2.1/jquery-3.2.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/public.css">
+</head>
+<body>
+<div class="header">
+
+    <p class="header-right">
+        <span><a href="">admin</a></span>
+        <span><a href="">admin</a></span>
+    </p>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 list-left" >
+            <div class="container-fluid">
+                <p class="brand">萝卜多后台管理系统</p>
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading left-first">
+                            <a class="accordion-toggle text1" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                信息管理
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse" style="height: 0px; ">
+                            <p><a class="accordion-inner text2">
+                                公司列表
+                            </a></p>
+                            <p><a class="accordion-inner text2">
+                                职位列表
+                            </a></p>
+                        </div>
+                    </div>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle text1" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                Aricle列表
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <p><a class="accordion-inner text2">
+                                Aricle管理
+                            </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 right">
+            <!--<h2>hello world</h2>-->
+            <div class="container-fluid right-body">
+                <!--<div class="row">-->
+                <!--<div class="col-md-10">-->
+                <div class="col-md-4">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <div class="col-md-4">
+                            <label for="exampleInputName2">公司名称</label>
+                             </div>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" id="exampleInputName2"
+                                       placeholder="Jane Doe">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <label class="col-md-4 search-label select">公司行业</label>
+                    <div class="col-md-8">
+                        <select name="" class="form-control">
+                            <option value="">全部</option>
+                            <option value="0">首页Banner</option>
+                            <option value="1">找职位Banner</option>
+                            <option value="2">找精英Banner</option>
+                            <option value="3">行业大图</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                <label for="exampleInputName2">公司名称</label>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" placeholder="Jane Doe">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <label class="col-md-4 search-label select">认证状态</label>
+                    <div class="col-md-8">
+                        <select name="" class="form-control">
+                            <option value="">全部</option>
+                            <option value="0">首页Banner</option>
+                            <option value="1">找职位Banner</option>
+                            <option value="2">找精英Banner</option>
+                            <option value="3">行业大图</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label class="col-md-4 search-label select">冻结状态</label>
+                    <div class="col-md-8">
+                        <select name="" class="form-control" ng-model="params.type">
+                            <option value="">全部</option>
+                            <option value="0">首页Banner</option>
+                            <option value="1">找职位Banner</option>
+                            <option value="2">找精英Banner</option>
+                            <option value="3">行业大图</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label class="col-md-4 search-label select">融资规模</label>
+                    <div class="col-md-8">
+                        <select name="" class="form-control" ng-model="params.type">
+                            <option value="">全部</option>
+                            <option value="0">首页Banner</option>
+                            <option value="1">找职位Banner</option>
+                            <option value="2">找精英Banner</option>
+                            <option value="3">行业大图</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label class="col-md-4 search-label select">地区</label>
+                    <div class="col-md-6">
+                        <select name="" class="form-control">
+                            <option value="">全部</option>
+                            <option value="0">首页Banner</option>
+                            <option value="1">找职位Banner</option>
+                            <option value="2">找精英Banner</option>
+                            <option value="3">行业大图</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <!--<label class="col-md-4 search-label">融资规模</label>-->
+                    <div class="col-md-6">
+                        <select name="" class="form-control" ng-model="params.type">
+                            <option value="">全部</option>
+                            <option value="0">首页Banner</option>
+                            <option value="1">找职位Banner</option>
+                            <option value="2">找精英Banner</option>
+                            <option value="3">行业大图</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <!--<label class="col-md-4 search-label">融资规模</label>-->
+                    <div class="col-md-6">
+                        <select name="" class="form-control" ng-model="params.type">
+                            <option value="">全部</option>
+                            <option value="0">首页Banner</option>
+                            <option value="1">找职位Banner</option>
+                            <option value="2">找精英Banner</option>
+                            <option value="3">行业大图</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

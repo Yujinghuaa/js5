@@ -1,0 +1,75 @@
+.body{
+    background: #000000;
+}
+.header{
+
+    width:100%;
+    height:4rem;
+    /*border:1px solid #ea8b5a;*/
+    display:flex;
+    justify-content:flex-end;
+    line-height:4rem;
+    background:#FFFFFF;
+    position:absolute;
+    top:0;
+    z-index:2;
+
+}
+.brand{
+    font-size: 1.8rem;
+    /*padding:0 2.5rem;*/
+    font-weight:bold;
+    background:#f9a84e;
+    color: #ffffff;
+    line-height: 4rem;
+    border-bottom:#000000;
+    z-index:3;
+
+}
+
+.list-left{
+    /*border:1px solid #000000;*/
+    height:100vh;
+    /*position:fixed;*/
+    /*top:0;*/
+    z-index:2;
+    text-align:center;
+    text-decoration: none;
+    text-underline:none;
+    background: linear-gradient(#f8ab58, #ea8b5a);
+}
+a:hover{
+    text-decoration:none !important;
+}
+.left-first{
+
+}
+.text1,
+.text2{
+    color: #FFFFFF;
+    line-height: 3rem;
+    font-size:1.6rem;
+    /*padding:1rem 4rem;*/
+}
+.text2{
+    font-size: 1.4rem;
+}
+.text1:hover,
+.text2:hover{
+    text-decoration:none !important;
+    color: #FFFFFF;
+    background:#feae45;
+
+}
+.text1:focus,
+.text2:focus{
+    text-decoration:none !important;
+    color: #FFFFFF;
+}
+.right{
+    background: #f5f5f5;
+    height: 100vh;
+    /*width:80%;*/
+    padding-top:4rem;
+}
+
